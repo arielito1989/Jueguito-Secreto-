@@ -35,7 +35,7 @@ function ReiniciarJuego() {
 function verificarIntento() {
     let numberUsuario = parseInt(document.getElementById("valorDeUsuario").value);
     if (numberUsuario === numeroSecreto) {
-        asignarTextoElemento("p", `Adivinaste el número secreto es: ${numeroSecreto}, te tomo ${intentos} ${intentos ==1? "intento" :"intentos"},  felicidades!`);
+        asignarTextoElemento("p", `¡Adivinaste! el número secreto es: ${numeroSecreto}, te tomo ${intentos} ${intentos ==1? "intento" :"intentos"},  felicidades!`);
         document.getElementById("reiniciar").removeAttribute("disabled");
 
     }    else if (numberUsuario > numeroSecreto) {
